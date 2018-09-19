@@ -16,7 +16,7 @@ int main(){
     printf("Created thread number %d\n", i);
   }
   for (i = 0; i < N; ++i){
-    pthread_join(thread[i], NULL);
+    pthread_join(threads[i], NULL);
   }
   return 0;
 }
